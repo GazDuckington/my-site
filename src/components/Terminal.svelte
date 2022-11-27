@@ -1,18 +1,16 @@
 <script lang="ts">
 	import InputTerminal from '$elem/InputTerminal.svelte';
-	import { history } from '$lib/stores';
 	import { cmd } from '$lib/terminal';
 
 	var renderOutput: string[] = [];
 
-	function handleSubmit(e: { detail: any }) {
+	function handleSubmit(e: { detail: string }) {
 		if (e.detail == 'clear') {
 			renderOutput = [];
 		} else {
 			const output = cmd(e.detail);
 			renderOutput[renderOutput.length] = output;
 		}
-		$history[$history.length] = e.detail;
 	}
 </script>
 

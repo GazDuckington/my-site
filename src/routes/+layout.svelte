@@ -5,7 +5,7 @@
 	import IconMail from '$elem/IconMail.svelte';
 	import { isDark } from '$lib/stores';
 	import '../app.css';
-	let dark: any;
+	let dark: boolean;
 	$: dark = $isDark;
 </script>
 

@@ -1,5 +1,5 @@
-export function keypress(node: any) {
-	function handleKeypress(e: any) {
+export function keypress(node: HTMLInputElement) {
+	function handleKeypress(e: KeyboardEvent) {
 		if (e.key === 'Enter') {
 			node.dispatchEvent(new CustomEvent('enterkey'));
 		} else if (e.key === 'ArrowUp') {

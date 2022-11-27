@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { keypress } from '$lib/action';
 	import { history } from '$lib/stores';
-	import { createEventDispatcher } from 'svelte';
-	import { onMount } from 'svelte';
+	import { createEventDispatcher, onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
 	export let hindex = $history.length;
-	export let input: any;
+	let input: HTMLInputElement;
 
 	function handleDispatch() {
 		dispatch('submit', input.value);
+		$history[$history.length] = input.value;
 		hindex = $history.length;
 		input.value = '';
 	}
