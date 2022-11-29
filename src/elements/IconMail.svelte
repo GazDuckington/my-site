@@ -1,13 +1,8 @@
 <script lang="ts">
-	export let s: number;
+	export let klass: string = 'w-4 h-4 text-cyan-500 mt-1.5';
 </script>
 
-<svg
-	xmlns="http://www.w3.org/2000/svg"
-	viewBox="0 0 24 24"
-	fill="currentColor"
-	class="w-{s} h-{s} mt-1.5 text-cyan-500"
->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class={klass}>
 	<path
 		d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
 	/>

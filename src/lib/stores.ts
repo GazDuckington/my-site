@@ -7,7 +7,7 @@ history.subscribe((history) => {
 	if (browser) window.localStorage.setItem('history', JSON.stringify(history));
 });
 
-const isDarkStored = browser && window.localStorage.getItem('isDark');
+const isDarkStored = browser && window.localStorage.getItem('isDark') == 'true';
 export const isDark = writable(isDarkStored ? isDarkStored : true);
 isDark.subscribe((isDark) => {
 	if (browser) window.localStorage.setItem('isDark', isDark.toString());

@@ -21,19 +21,19 @@
 		<h1>GazDuckington</h1>
 		<ul class="flex">
 			<li class="flex align-middle">
-				<IconMail s={4} />
+				<IconMail klass="w-4 h-4 text-cyan-500 mt-1.5" />
 				<a href="mailto:dianghazy@protonmail.com">e-mail</a>
 			</li>
 			|
 			<li class="flex align-middle">
-				<IconGithub s={4} />
+				<IconGithub klass="w-4 h-4 text-cyan-500 mt-1.5" />
 				<a target="_blank" rel="noopener noreferrer" href="https://www.github.com/GazDuckington"
 					>Github</a
 				>
 			</li>
 			|
 			<li class="flex align-middle">
-				<IconCheckDoc s={4} />
+				<IconCheckDoc klass="w-4 h-4 text-cyan-500 mt-1.5" />
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
