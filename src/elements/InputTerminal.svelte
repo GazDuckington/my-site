@@ -40,11 +40,11 @@
 </script>
 
 <form on:submit|preventDefault={handleDispatch} class="flex">
-	<ChevronRightIcon class="w-6 h-6 text-emerald-500 mr-0.5" />
+	<ChevronRightIcon class="w-6 h-6 text-green-500 dark:text-emerald-600 mr-0.5" />
 	<input
-		class="w-96 caret-pink-600 focus-visible:outline-none bg-transparent transition-all placeholder:text-slate-700"
+		class="w-96 caret-pink-600 focus-visible:outline-none bg-transparent transition-all placeholder:text-slate-700 dark:placeholder:text-slate-500 animate-pulse"
 		type="text"
-		placeholder="Type here"
+		placeholder="Type 'help' to learn more."
 		bind:this={input}
 		use:keypress
 		on:arrowup|preventDefault={arrowUp}

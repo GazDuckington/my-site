@@ -15,7 +15,7 @@
 </script>
 
 <div class="container">
-	<div class="output">
+	<div class="text-violet-700 dark:text-violet-600">
 		{#each renderOutput as op}
 			{@html op}
 		{/each}

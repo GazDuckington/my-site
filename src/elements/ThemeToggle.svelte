@@ -6,7 +6,7 @@
 
 {#if $isDark}
 	<MoonIcon
-		class="btn w-{size} h-{size} text-sky-200 stroke-sky-400 hover:text-sky-100 hover:stroke-sky-300"
+		class="w-{size} h-{size} text-sky-200 stroke-sky-400 hover:text-sky-100 hover:stroke-sky-300"
 	/>
 {:else}
 	<SunIcon
@@ -15,7 +15,4 @@
 {/if}
 
 <style lang="postcss">
-	.btn {
-		@apply stroke-1;
-	}
 </style>

@@ -16,16 +16,16 @@
 <Body class={dark} />
 
 <main
-	class="bg-slate-300 dark:bg-slate-800 w-screen h-screen text-slate-900 dark:text-slate-400 flex justify-center items-center"
+	class="bg-gray-300 dark:bg-slate-800 w-screen h-screen text-slate-900 dark:text-slate-400 flex justify-center items-center translate-all easi-in-out duration-150"
 >
 	<div
-		class="overflow-auto flex flex-col items-start border border-red-800 w-[75%] h-[99%] rounded shadow"
+		class="bg-gray-500 dark:bg-slate-900 overflow-auto flex flex-col items-start w-[75%] h-[80%] rounded shadow"
 	>
 		<Navbar />
 
 		<Glitch />
 
-		<div>
+		<div class="mr-4">
 			<slot />
 		</div>
 	</div>

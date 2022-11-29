@@ -1,7 +1,7 @@
 export function cmd(cmd: string) {
 	switch (cmd.toLowerCase().trim()) {
 		default:
-			return "<div>command '" + cmd + "' not found.</div>";
+			return "<div class='text-red-600'>command '" + cmd + "' not found.</div>";
 		case 'contact':
 			return contact();
 		case 'help':
@@ -33,7 +33,7 @@ function list() {
 			<li>'ls': 'list all commands (this page)'</li>
 			<li>'help': 'returns help page.'</li>
 			<li>'about': 'returns a little info about me.'</li>
-			<li>'contact': 'returns my list of contacts.'</li>
+			<li>'contact': 'returns my contact informations.'</li>
 		</ul>
 	`
 }
