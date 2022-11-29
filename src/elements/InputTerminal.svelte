@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { keypress } from '$lib/action';
 	import { history } from '$lib/stores';
+	import { ChevronRightIcon } from '@rgossiaux/svelte-heroicons/solid';
 	import { createEventDispatcher, onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
@@ -36,8 +37,8 @@
 	}
 </script>
 
-<form on:submit|preventDefault={handleDispatch}>
-	<b class="caret"></b>
+<form on:submit|preventDefault={handleDispatch} class="flex">
+	<ChevronRightIcon class="w-4 h-4 mt-1.5 text-emerald-500" />
 	<input
 		type="text"
 		bind:this={input}
