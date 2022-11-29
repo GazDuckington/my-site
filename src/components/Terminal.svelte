@@ -18,7 +18,6 @@
 	<div class="output">
 		{#each renderOutput as op}
 			{@html op}
-			<br />
 		{/each}
 	</div>
 

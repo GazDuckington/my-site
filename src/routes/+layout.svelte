@@ -2,10 +2,9 @@
 	import '../app.css';
 
 	import Glitch from '$elem/Glitch.svelte';
-	import { DocumentTextIcon, MailIcon } from '@rgossiaux/svelte-heroicons/solid';
+	import Navbar from '$elem/Navbar.svelte';
 	import { Body } from 'svelte-body';
 	import { isDark } from '$lib/stores';
-	import GithubIcon from '$elem/GithubIcon.svelte';
 
 	$: dark = $isDark ? 'dark' : '';
 </script>
@@ -16,39 +15,18 @@
 
 <Body class={dark} />
 
-<main>
-	<header>
+<main
+	class="bg-slate-300 dark:bg-slate-800 w-screen h-screen text-slate-900 dark:text-slate-400 flex justify-center items-center"
+>
+	<div
+		class="overflow-auto flex flex-col items-start border border-red-800 w-[75%] h-[99%] rounded shadow"
+	>
+		<Navbar />
+
 		<Glitch />
-	</header>
-	<nav>
-		<button
-			on:click={() => {
-				$isDark = !$isDark;
-			}}>Toggle</button
-		>
-		<h1>GazDuckington</h1>
-		<ul class="flex">
-			<li class="flex align-middle">
-				<MailIcon class="w-4 h-4 mt-1.5 text-teal-500 dark:text-red-300" />
-				<a href="mailto:dianghazy@protonmail.com">Email</a>
-			</li>
-			|
-			<li class="flex align-middle">
-				<GithubIcon class="w-4 h-4 mt-1.5 text-cyan-500" />
-				<a target="_blank" rel="noopener noreferrer" href="https://www.github.com/GazDuckington"
-					>Github</a
-				>
-			</li>
-			|
-			<li class="flex align-middle">
-				<DocumentTextIcon class="w-4 h-4 mt-1.5 text-cyan-500" />
-				<a
-					target="_blank"
-					rel="noopener noreferrer"
-					href="https://efss.qloud.my/index.php/s/2enkqmfHBit5PCk">Resume</a
-				>
-			</li>
-		</ul>
-	</nav>
-	<slot />
+
+		<div>
+			<slot />
+		</div>
+	</div>
 </main>

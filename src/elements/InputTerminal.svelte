@@ -9,10 +9,12 @@
 	let input: HTMLInputElement;
 
 	function handleDispatch() {
-		dispatch('submit', input.value);
-		$history[$history.length] = input.value;
-		hindex = $history.length;
-		input.value = '';
+		if (input.value) {
+			dispatch('submit', input.value);
+			$history[$history.length] = input.value;
+			hindex = $history.length;
+			input.value = '';
+		}
 	}
 
 	onMount(() => {
@@ -38,9 +40,11 @@
 </script>
 
 <form on:submit|preventDefault={handleDispatch} class="flex">
-	<ChevronRightIcon class="w-4 h-4 mt-1.5 text-emerald-500" />
+	<ChevronRightIcon class="w-6 h-6 text-emerald-500 mr-0.5" />
 	<input
+		class="w-96 caret-pink-600 focus-visible:outline-none bg-transparent transition-all placeholder:text-slate-700"
 		type="text"
+		placeholder="Type here"
 		bind:this={input}
 		use:keypress
 		on:arrowup|preventDefault={arrowUp}
