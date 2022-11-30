@@ -14,9 +14,9 @@ isDark.subscribe((isDark) => {
 	if (browser) window.localStorage.setItem('isDark', isDark.toString());
 });
 
-export const dateTime = readable(dayjs().format('ddd, hh:mm'), function start(set) {
-	set(dayjs().format('ddd, hh:mm'))
-	const interval = setInterval(() => set(dayjs().format('ddd, hh:mm')), 1000)
+export const dateTime = readable(dayjs().format('ddd, D MMM hh:mm:ss'), function start(set) {
+	set(dayjs().format('ddd, D MMM hh:mm:ss'))
+	const interval = setInterval(() => set(dayjs().format('ddd, D MMM hh:mm:ss')), 1000)
 
 	return function stop() {
 		clearInterval(interval)

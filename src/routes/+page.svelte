@@ -19,7 +19,7 @@
 	</div>
 </div>
 <div class="flex justify-between font-mono pl-2 bg-slate-800 dark:bg-slate-900 rounded-b crt">
-	<div>
+	<div class="hover:text-green-500 hover:font-bold">
 		{$dateTime}
 	</div>
 	<button
