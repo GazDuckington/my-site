@@ -15,7 +15,7 @@
 <Body class={dark} />
 
 <main
-	class="bg-slate-500 dark:bg-slate-800 w-screen h-screen text-slate-900 dark:text-slate-400 translate-all easi-in-out duration-150 flex justify-center items-center"
+	class="bg-slate-700 dark:bg-slate-800 w-screen h-screen text-slate-900 dark:text-slate-400 translate-all easi-in-out duration-150 flex justify-center items-center"
 >
 	<div>
 		<slot />

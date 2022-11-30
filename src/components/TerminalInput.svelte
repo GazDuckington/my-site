@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { keypress } from '$lib/action';
 	import { history } from '$lib/stores';
-	import { ChevronRightIcon } from '@rgossiaux/svelte-heroicons/solid';
 	import { createEventDispatcher, onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
@@ -45,8 +44,8 @@
 	<p class="w-6 h-6 text-green-500 dark:text-emerald-600 animate-pulse">{prompt}</p>
 	<input
 		class="lg:w-[60em] w-[20em] caret-pink-600 focus-visible:outline-none 
-		placeholder:text-slate-800 dark:placeholder:text-slate-500 placeholder:animate-pulse 
-		bg-transparent text-slate-100 dark:text-slate-300"
+		placeholder:text-slate-900 dark:placeholder:text-slate-500 
+		bg-transparent text-sky-500 dark:text-cyan-500 crt-anim"
 		type="text"
 		placeholder="enter command here."
 		bind:this={input}
@@ -54,10 +53,4 @@
 		on:arrowup|preventDefault={arrowUp}
 		on:arrowdown|preventDefault={arrowDown}
 	/>
-	<style>
-		input {
-			animation: flicker 0.15s infinite;
-			animation: textShadow 1.6s infinite;
-		}
-	</style>
 </form>

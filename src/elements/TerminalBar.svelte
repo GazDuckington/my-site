@@ -7,11 +7,12 @@
 	rounded-t pt-0.5 pb-0 px-2 flex justify-between crt"
 >
 	<div>
-		Terminal
 		<a
 			title="go to homepage"
 			href="/"
-			class="hover:animate-pulse px-2 hover:font-bold hover:text-sky-700">Home</a
+			class="hover:animate-pulse hover:font-bold hover:text-sky-500"
 		>
+			Terminal
+		</a>
 	</div>
 </nav>

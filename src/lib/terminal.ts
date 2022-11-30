@@ -12,7 +12,21 @@ export function cmd(cmd: string) {
 			return list();
 		case 'src':
 			return src();
+		case 'sensi':
+			return sensi()
 	}
+}
+
+function sensi() {
+	window.open('https://github.com/GazDuckington/sensi', '_blank');
+	return `
+		<div>
+			<a
+				href="https://github.com/GazDuckington/sensi"
+			 	target="_blank"
+				rel="noopener noreferrer">Sensi: Naive-Bayes sentiment analysis tool, for Indonesian language.</a>
+		</div>
+	`;
 }
 
 function src() {
@@ -78,7 +92,7 @@ function about() {
 function contact() {
 	return `
 <div class="flex flex-col">
-	<h3 class="italic font-bold text-blue-600 dark:text-sky-500">Contact Informations:</h3>
+	<h3 class="italic font-bold text-sky-500 dark:text-sky-600">Contact Informations:</h3>
 	<div>
 		> <a href="mailto:dianghazy@protonmail.com">dianghazy@protonmail.com</a>
 	</div>

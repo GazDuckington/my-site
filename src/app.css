@@ -141,3 +141,7 @@
 			animation: flicker 0.15s infinite;
 			animation: textShadow 1.6s infinite;
 }
+
+.crt-anim{
+		animation: flicker 0.15s infinite;
+		animation: textShadow 1.6s infinite;}
