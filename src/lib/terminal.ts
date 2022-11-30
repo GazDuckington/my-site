@@ -7,16 +7,16 @@ export function cmd(cmd: string) {
 		case 'help':
 			return help();
 		case 'about':
-			return about()
+			return about();
 		case 'ls':
-			return list()
+			return list();
 		case 'src':
-			return src()
+			return src();
 	}
 }
 
 function src() {
-	window.open('https://github.com/GazDuckington/my-site', "_blank");
+	window.open('https://github.com/GazDuckington/my-site', '_blank');
 	return `
 		<div>
 			<a
@@ -24,7 +24,7 @@ function src() {
 			 	target="_blank"
 				rel="noopener noreferrer">Terminal's source code</a>
 		</div>
-	`
+	`;
 }
 
 function list() {
@@ -35,7 +35,7 @@ function list() {
 			<li>'about': 'returns a little info about me.'</li>
 			<li>'contact': 'returns my contact informations.'</li>
 		</ul>
-	`
+	`;
 }
 
 function help() {
@@ -46,7 +46,7 @@ function help() {
 			<div>Type 'ls' to list all commands.</div>
 			<div>Type 'src' to go to this project's Github repository.</div>
 		</div>
-	`
+	`;
 }
 
 function about() {
@@ -73,7 +73,7 @@ function about() {
 				</td>
 			</tr>
 		</table>
-	`
+	`;
 }
 
 function contact() {
@@ -104,5 +104,5 @@ function contact() {
 				</td>
 			</tr>
 		</table>
-	`
+	`;
 }
