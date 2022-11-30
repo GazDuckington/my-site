@@ -7,6 +7,7 @@
 	const dispatch = createEventDispatcher();
 	export let hindex = $history.length;
 	let input: HTMLInputElement;
+	let prompt = '';
 
 	function handleDispatch() {
 		if (input.value) {
@@ -15,6 +16,7 @@
 			hindex = $history.length;
 			input.value = '';
 		}
+		input.focus();
 	}
 
 	onMount(() => {
@@ -40,14 +42,22 @@
 </script>
 
 <form on:submit|preventDefault={handleDispatch} class="flex">
-	<ChevronRightIcon class="w-6 h-6 text-green-500 dark:text-emerald-600 mr-0.5" />
+	<p class="w-6 h-6 text-green-500 dark:text-emerald-600 animate-pulse">{prompt}</p>
 	<input
-		class="w-96 caret-pink-600 focus-visible:outline-none bg-transparent transition-all placeholder:text-slate-700 dark:placeholder:text-slate-500 animate-pulse"
+		class="lg:w-[60em] w-[20em] caret-pink-600 focus-visible:outline-none 
+		placeholder:text-slate-800 dark:placeholder:text-slate-500 placeholder:animate-pulse 
+		bg-transparent text-slate-100 dark:text-slate-300"
 		type="text"
-		placeholder="Type 'help' to learn more."
+		placeholder="enter command here."
 		bind:this={input}
 		use:keypress
 		on:arrowup|preventDefault={arrowUp}
 		on:arrowdown|preventDefault={arrowDown}
 	/>
+	<style>
+		input {
+			animation: flicker 0.15s infinite;
+			animation: textShadow 1.6s infinite;
+		}
+	</style>
 </form>

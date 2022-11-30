@@ -11,7 +11,7 @@ const config = {
 		preprocess({
 			postcss: true
 		}),
-		mdsvex(config)
+		mdsvex()
 	],
 
 	kit: {

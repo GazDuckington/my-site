@@ -3,13 +3,15 @@
 	import GithubIcon from '$elem/GithubIcon.svelte';
 </script>
 
-<div class="flex flex-col">
-	<div
-		class="font-bold dark:text-slate-100 text-slate-50 px-8 dark:bg-indigo-600 bg-indigo-500 w-fit"
-	>
-		Dian Ghazy Alfuadi, S.kom
-	</div>
+<div>
+	<b class="text-slate-800 dark:text-slate-100 px-8 w-fit">Dian Ghazy Alfuadi, S.kom</b>
+</div>
+
+<div>
 	<p class="font-sans italic">Software Engineer, Linux Enthusiast & Python Lover.</p>
+</div>
+
+<div>
 	<ul class="flex my-2 gap-x-2">
 		<li>
 			<a href="mailto:dianghazy@protonmail.com">

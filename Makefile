@@ -1,5 +1,5 @@
-run_dev:
-	@pnpm run dev
+dev:
+	@pnpm run dev -- --open
 build:
 	@pnpm run build
 preview:
