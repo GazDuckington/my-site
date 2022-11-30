@@ -1,6 +1,6 @@
 import { browser } from '$app/environment';
 import { writable, readable } from 'svelte/store';
-import dayjs from 'dayjs'
+import dayjs from 'dayjs';
 
 const historyStored = browser && window.localStorage.getItem('history');
 export const history = writable(historyStored ? JSON.parse(historyStored) : []);
@@ -15,10 +15,10 @@ isDark.subscribe((isDark) => {
 });
 
 export const dateTime = readable(dayjs().format('ddd, D MMM hh:mm:ss'), function start(set) {
-	set(dayjs().format('ddd, D MMM hh:mm:ss'))
-	const interval = setInterval(() => set(dayjs().format('ddd, D MMM hh:mm:ss')), 1000)
+	set(dayjs().format('ddd, D MMM hh:mm:ss'));
+	const interval = setInterval(() => set(dayjs().format('ddd, D MMM hh:mm:ss')), 1000);
 
 	return function stop() {
-		clearInterval(interval)
-	}
-})
+		clearInterval(interval);
+	};
+});

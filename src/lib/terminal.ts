@@ -13,9 +13,9 @@ export function cmd(cmd: string) {
 		case 'src':
 			return src();
 		case 'sensi':
-			return sensi()
+			return sensi();
 		case 'project':
-			return projects()
+			return projects();
 	}
 }
 
@@ -158,5 +158,5 @@ function projects() {
 		<i>Scripts, tweaks & window manager setups. A mess.</i>
 	</div>
 </div>
-	`
+	`;
 }
