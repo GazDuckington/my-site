@@ -9,6 +9,7 @@
 </svelte:head>
 
 <TerminalBar />
+
 <div
 	class="grid grid-rows-2 w-fit
 	dark:bg-slate-900
