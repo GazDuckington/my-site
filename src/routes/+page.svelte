@@ -4,10 +4,6 @@
 	import { dateTime, isDark } from '$lib/stores';
 </script>
 
-<svelte:head>
-	<title>Terminal</title>
-</svelte:head>
-
 <TerminalBar />
 
 <div

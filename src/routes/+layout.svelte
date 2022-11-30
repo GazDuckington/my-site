@@ -10,6 +10,7 @@
 
 <svelte:head>
 	<title>Ghazy's Website</title>
+	<link rel="icon" type="image/svg" href="/favicon.svg" />
 </svelte:head>
 
 <Body class={dark} />
