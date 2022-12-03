@@ -122,36 +122,40 @@ function contact() {
 function projects() {
 	return `
 <div class="flex flex-col">
-	<div class="italic font-bold text-sky-500 dark:text-sky-600">
+	<div class="italic font-bold text-sky-500 dark:text-sky-600 flex">
+		<p>link: </p>
 		<a href="https://github.com/GazDuckington/sensi" target="_blank" rel="noopener noreferrer"
-			>> Sensi
+			> Sensi
 		</a>
 	</div>
 	<div>
 		<i>Framework</i> analisis sentimen bahasa Indonesia, berdasarkan algoritma Naive-Bayes, untuk Python.
 	</div>
 
-	<div class="italic font-bold text-sky-500 dark:text-sky-600">
+	<div class="italic font-bold text-sky-500 dark:text-sky-600 flex">
+		<p>link: </p>
 		<a href="https://github.com/GazDuckington/my-site" target="_blank" rel="noopener noreferrer"
-			>> Website
+			> Website
 		</a>
 	</div>
 	<div>
 		Situs bertema terminal, yang berfungsi sebagain <i>landing page</i> personal.
 	</div>
 
-	<div class="italic font-bold text-sky-500 dark:text-sky-600">
+	<div class="italic font-bold text-sky-500 dark:text-sky-600 flex">
+		<p>link: </p>
 		<a href="https://github.com/GazDuckington/nvim" target="_blank" rel="noopener noreferrer"
-			>> PDE</a
+			> PDE</a
 		>
 	</div>
 	<div>
 		Konfigurasi Neovim sebagai <i>Personal Development Environment</i>.
 	</div>
 
-	<div class="italic font-bold text-sky-500 dark:text-sky-600">
+	<div class="italic font-bold text-sky-500 dark:text-sky-600 flex">
+		<p>link: </p>
 		<a href="https://github.com/GazDuckington/dotfile" target="_blank" rel="noopener noreferrer"
-			>> Dotfiles</a
+			> Dotfiles</a
 		>
 	</div>
 	<div>
