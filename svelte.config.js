@@ -18,6 +18,10 @@ const config = {
 		adapter: adapter({
 			fallback: 'index.html'
 		}),
+		paths: {
+			base: dev ? "" : "/my-site"
+		},
+		target: "#svelte",
 		alias: {
 			$comp: 'src/components',
 			$elem: 'src/elements'
