@@ -7,4 +7,5 @@ preview:
 lint:
 	@pnpm run lint
 format:
-	@pnpm run format
+	rm -rf build/ 
+	@pnpm run format 
