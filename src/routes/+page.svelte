@@ -4,11 +4,15 @@
 	import TerminalFooter from '$elem/TerminalFooter.svelte';
 </script>
 
-<div class="rounded border-2 shadow-md border-slate-800 dark:border-slate-900 font-firacode crt">
+<div
+	class="rounded border-2 shadow-xl border-slate-800 dark:border-slate-700 
+	w-[20em] md:w-[45em] 
+	font-firacode crt"
+>
 	<TerminalBar />
 
 	<div
-		class="grid grid-rows-2 w-96 lg:w-[50em]
+		class="grid grid-rows-2
 	dark:bg-slate-900
 	h-[80vh] overflow-auto crt"
 	>

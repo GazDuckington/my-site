@@ -2,9 +2,11 @@
 </script>
 
 <nav
-	class="font-firacode
-	bg-slate-800 dark:bg-slate-900
-	pt-0.5 pb-0 px-2 flex justify-between crt"
+	class="font-mono w-full text-sm
+	text-slate-400
+	bg-slate-700 dark:bg-slate-800
+	pb-0.5 px-2 flex justify-between
+	crt"
 >
-	<p class="text-green-500">Terminal _</p>
+	<p class="text-green-500 animate-pulse">Terminal<b>_</b></p>
 </nav>

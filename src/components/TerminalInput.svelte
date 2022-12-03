@@ -44,7 +44,7 @@
 	<p class="w-6 h-6 text-green-500 dark:text-emerald-600 animate-pulse font-firacode">{prompt}</p>
 	<input
 		class="caret-pink-600 focus-visible:outline-none 
-		placeholder:text-slate-900 dark:placeholder:text-slate-500 
+		placeholder:text-slate-500 dark:placeholder:text-slate-600 
 		bg-transparent text-sky-500 dark:text-cyan-500 crt-anim"
 		type="text"
 		placeholder="enter command here."
