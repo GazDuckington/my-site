@@ -8,7 +8,7 @@
 	<TerminalBar />
 
 	<div
-		class="grid grid-rows-2 w-fit
+		class="grid grid-rows-2 w-[35em] md:w-[50em]
 	dark:bg-slate-900
 	h-[80vh] overflow-auto crt"
 	>
