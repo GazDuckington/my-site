@@ -18,10 +18,6 @@ const config = {
 		adapter: adapter({
 			fallback: 'index.html'
 		}),
-		paths: {
-			base: "gh-pages" ? "" : "/my-site"
-		},
-		target: "#svelte",
 		alias: {
 			$comp: 'src/components',
 			$elem: 'src/elements'
