@@ -19,7 +19,7 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: dev ? "" : "/my-site"
+			base: "gh-pages" ? "" : "/my-site"
 		},
 		target: "#svelte",
 		alias: {
