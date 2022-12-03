@@ -170,10 +170,10 @@
 
 @layer base {
 	@font-face {
-		font-family: "FiraCode Nerd Font Complete";
+		font-family: 'FiraCode Nerd Font Complete';
 		src: local('FiraCode Nerd Font Complete'),
 			url('fonts/Fira Code Bold Nerd Font Complete.ttf') format('truetype');
 		font-stretch: normal;
-    font-style: normal;
+		font-style: normal;
 	}
 }

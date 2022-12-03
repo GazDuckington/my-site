@@ -5,8 +5,8 @@ module.exports = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			'firacode': 'FiraCode Nerd Font Complete'
-		},
+			firacode: 'FiraCode Nerd Font Complete'
+		}
 	},
 	plugins: [require('@tailwindcss/typography')]
 };
