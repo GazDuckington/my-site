@@ -10,3 +10,5 @@ lint:
 	@pnpm run lint
 format:
 	@pnpm run format 
+
+.PHONY: build deploy
