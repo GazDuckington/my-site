@@ -14,6 +14,7 @@
 			$history[$history.length] = input.value;
 			hindex = $history.length;
 			input.value = '';
+			return
 		}
 		input.focus();
 	}
@@ -41,16 +42,24 @@
 </script>
 
 <form on:submit|preventDefault={handleDispatch} class="flex">
-	<p class="w-6 h-6 text-green-500 dark:text-emerald-600 animate-pulse font-firacode">{prompt}</p>
+	<p class="w-6 h-6 text-green-500 dark:text-emerald-600">{prompt}</p>
 	<input
-		class="caret-pink-600 focus-visible:outline-none 
+		class="
+		w-full mr-2
+		caret-pink-600 focus-visible:outline-none 
 		placeholder:text-slate-500 dark:placeholder:text-slate-600 
-		bg-transparent text-sky-500 dark:text-cyan-500 crt-anim"
+		bg-transparent text-sky-500 dark:text-cyan-500
+		crt-anim
+		"
 		type="text"
-		placeholder="enter command here."
+		placeholder="Type 'command' and press enter."
 		bind:this={input}
 		use:keypress
-		on:arrowup|preventDefault={arrowUp}
 		on:arrowdown|preventDefault={arrowDown}
+		on:arrowup|preventDefault={arrowUp}
 	/>
 </form>
+
+<style>
+
+</style>

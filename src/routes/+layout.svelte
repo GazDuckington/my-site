@@ -1,22 +1,20 @@
 <script lang="ts">
-	import '../app.css';
+	import '../app.postcss';
 
 	import { isDark } from '$lib/stores';
 	import { Body } from 'svelte-body';
 
 	let dark = 'dark';
-	$: dark = $isDark ? 'dark' : '';
+	$: dark = $isDark ? 'dark' : 'light';
 </script>
 
 <svelte:head>
-	<title>Ghazy's Website</title>
+	<title>Ghazy&apos;s Website</title>
 	<link rel="icon" type="image/svg" href="/favicon.svg" />
 </svelte:head>
 
-<Body class={dark} />
+<body class={dark} />
 
-<main
-	class="bg-slate-700 dark:bg-slate-800 w-screen h-screen text-slate-900 dark:text-slate-400 translate-all easi-in-out duration-150 flex justify-center items-center font-mono"
->
+<main>
 	<slot />
 </main>

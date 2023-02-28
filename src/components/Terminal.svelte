@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { isDark } from '$lib/stores';
 	import TerminalInput from '$comp/TerminalInput.svelte';
-	import { cmd } from '$lib/terminal';
 	import TerminalOutput from '$comp/TerminalOutput.svelte';
+	import TermInfo from '$elem/TerminalInfoBar.svelte';
+	import { isDark } from '$lib/stores';
+	import { cmd } from '$lib/terminal';
 
 	var renderOutput: string[] = [];
 
 	function handleSubmit(e: { detail: string }) {
-		if (e.detail == 'clear') {
+		if (e.detail == 'clear' || e.detail == 'cl') {
 			renderOutput = [];
 		} else if (e.detail == 'theme') {
 			$isDark = !$isDark;
@@ -18,9 +19,23 @@
 	}
 </script>
 
-<div>
-	<TerminalOutput output={renderOutput} />
-	<TerminalInput on:submit={handleSubmit} />
+<div
+	class="
+	md:w-[90vh] w-[99%]
+	crt crt-anim font-firacode
+	"
+>
+	<TermInfo />
+	<div
+		class="
+		overflow-scroll 
+		pl-2 h-[60vh] rounded-b-md 
+		bg-gray-900
+		"
+	>
+		<TerminalOutput output={renderOutput} />
+		<TerminalInput on:submit={handleSubmit} />
+	</div>
 </div>
 
 <style>
