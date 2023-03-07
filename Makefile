@@ -11,4 +11,6 @@ lint:
 format:
 	@pnpm run format 
 
-.PHONY: build deploy
+default: dev
+
+.PHONY: default
