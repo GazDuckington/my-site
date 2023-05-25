@@ -3,7 +3,7 @@ dev:
 build:
 	@rm -rf ./build/ &&	pnpm run build
 deploy:
-	@cp -r ./build/* ~/dev/gazduckington.github.io/
+	git subtree push --prefix dist origin gh-pages
 preview:
 	@pnpm run preview
 lint:
