@@ -3,7 +3,7 @@
 </script>
 
 {#if output}
-	<div class="output px-6 overflow-scroll">
+	<div class="output px-6">
 		{#each output as op}
 			{@html op}
 		{/each}
@@ -13,6 +13,9 @@
 <style lang="postcss" global>
 	.output {
 		@apply text-gray-500;
+		overflow: auto;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 	.output a {
 		@apply text-blue-500 hover:text-sky-500;
